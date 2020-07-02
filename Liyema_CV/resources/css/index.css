@@ -1,0 +1,519 @@
+/*general!*/
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body  {
+    margin: 0;
+    padding: 0;
+}
+/*general END*/
+
+
+/*navbar!*/
+nav {
+    box-shadow: 0.25em 0.5em 0.75em rgba(0,0,0,.25);
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}
+/*navbar END*/
+
+
+/*Javascript animation code!*/
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+  
+.fade-in.appear {
+    opacity: 1;
+}
+/*Javascript animation code EBD*/
+
+
+/* landing-page!*/
+
+.my-intro {
+    background-image: url('C:/Users/Liyema/Desktop/Projects/Codespace/Liyema_CV/resources/images/landing_image_256kb.jpg');
+    background-attachment: fixed;
+    height: 150vh;
+    position: relative;
+    background-size: cover;
+    
+} 
+
+
+/*deals with the text only*/
+.my-intro { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3.5em 0 3.5em;
+    color: black;
+    
+
+}
+
+.landing-page {
+    backdrop-filter: blur(7px);
+    border: 3px solid black;
+    padding: 0 2em 2em 2em;
+}
+
+.section__title--home {
+    position: relative;
+    
+}
+
+.section__title--home::after {
+    content: '';
+    display: block;
+    width: 4em;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    opacity: 1;
+    transform: translateX(-0.3em);
+}
+
+.middle {
+    position: relative;
+    left: 0.5em;
+}
+
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 10px 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn-outline-hire-me {
+    background-color:  #FF512F;
+    color: white; 
+    border: 2px solid #FF512F;
+}
+
+.btn-outline-hire-me:hover {
+    background-color: white;
+    color: #000;
+}
+
+.btn-outline-get-cv {
+    background-color: white;
+    color: #000;
+    border: 2px solid #FF512F;
+}
+
+.btn-outline-get-cv:hover {
+   background-color: #FF512F;
+   color: white;
+}
+
+/* landing-page END*/
+
+
+/*expertise!*/
+.section__title  {
+    padding-top: 2em;
+}
+.expertise {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2em;
+    
+}
+
+.my-expertise {
+    
+    text-align: center;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(230,46,0,1) 73%, rgba(252,176,69,1) 100%);
+    color: white;
+}
+
+.section__subtitle--expertise {
+    margin-bottom: 1em;
+}
+
+
+.coding-box {
+    
+    border-radius: 5px;
+    box-shadow: 0 0 20px #fff;
+    padding-top: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: transform 200ms ease-in-out;
+    background-color: white;
+    color: #e62e00;
+}
+
+.coding-box:hover {
+    transform: scale(1.1);
+}
+
+
+
+.section__title--expertise {
+    position: relative; /*I put the position of relative becasue I'm going to add a psuedo element*/
+}
+
+.section__title--expertise::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    
+}
+/*expertise END*/
+
+
+/*my projects!*/
+.work {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+}
+
+.my-projects {
+    text-align: center;  
+}
+
+.section__title--projects {
+    position: relative; /*I put the position of relative becasue I'm going to add a psuedo element*/
+    
+}
+
+.section__title--projects::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor; 
+}
+
+
+.card {
+    margin-bottom: 2em;
+    width: 18rem;
+    overflow: hidden;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25)  
+}
+
+.card-img-top {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), 
+                  opacity 250ms linear;
+  
+}
+
+.card-img-top:hover{
+    transform: scale(1.2);
+
+}
+
+.card-body {
+    margin-top: 1em;
+}
+
+.btn-outline-projects {
+    background-color:  #8f22d8;
+    color: white; 
+    border: 2px solid #8f22d8;
+}
+
+.btn-outline-projects:hover {
+    background-color: white;
+    color: #000;
+}
+/*my projects END*/
+
+
+/* education */
+.education-institutions {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    padding-bottom: 2em;
+}
+
+.my-education {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(230,46,0,1) 73%, rgba(252,176,69,1) 100%);
+    color: white;
+    text-align: center;
+    
+}
+
+.institution {
+    
+    border-radius: 3px;
+    box-shadow: 0 0 20px #fff;
+    max-width: 400px;
+    padding: 0.5em;
+    margin-bottom: 2em;
+
+}
+.institution  {
+    transition: transform 200ms ease-in-out;
+   
+}
+
+.institution:hover {
+    transform: scale(1.1);
+}
+
+.section__title--education {
+    position: relative;
+}
+
+.section__title--education::after {
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    
+}
+
+.section__subtitle--education {
+    margin-bottom: 1em;
+}
+/* education END */
+
+
+/* about me!*/
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+
+.section__title--about {
+    position: relative;
+    
+}
+
+.section__title--about::after {
+    content: '';
+    display: block;
+    width: 7em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+    transform: translateX(-0.5em);
+}
+.grid-2 {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+}
+  
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.about-me__image {
+    max-width: 300px;
+    display: block;
+    margin-bottom: 2em;
+    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
+}
+
+.btn-outline-download-cv {
+    background-color:  #8f22d8;
+    color: white; 
+    border: 2px solid #8f22d8;
+}
+
+.btn-outline-download-cv:hover {
+    background-color: white;
+    color: #000;
+}
+/* about me END*/
+
+
+/*footer!*/
+.footer {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(230,46,0,1) 73%, rgba(252,176,69,1) 100%);
+    text-align: center;
+    padding: 2.5em 0;
+    color: white; 
+
+}
+
+.footer__intro {
+    display: flex;
+    justify-content: center;
+    margin: 0 1.5em;
+    
+    
+}
+
+.social__intro {
+    margin: 2em 0;
+    position: relative;
+}
+
+.social__intro::after {
+    content: '';
+    display: block;
+    width: 7em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: currentColor;
+}
+
+.footer p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-transform: none;
+     
+}
+
+.social-list__link:hover {
+    opacity: 0.5;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    margin: 2em 1.5em;
+    padding: 0;
+}
+
+.social-list__item {
+    margin: 2 0.5em; 
+}
+
+.social-list__link { /*this is for touch screens. Extra space for butter-fingers*/
+    padding: 1em;
+}
+
+.footer__outro {
+   margin-top: 5em;
+}
+/*footer END*/
+
+/*Navigate to top button!*/
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #000; 
+    color: white; 
+    cursor: pointer; 
+    padding: 8px; 
+    border-radius: 0px;
+    font-size: 18px;
+    
+}
+  
+#myBtn:hover {
+    background-color: #555; 
+}
+
+.Go-to-top {
+    font-size: 10px;
+}
+/*Navigate to top button END*/
+
+@media only screen and (min-width: 38em) and (min-width: 40em) {
+    /* landing-page!*/
+    .middle {
+        position: relative;
+        left: 0;
+    }
+    .text__1 {
+      left: 3em;
+    }
+    .text__2 {
+        left: 1em;
+    }
+    .text__3 {
+        left: 2em;
+    }
+    /* landing-page END*/
+
+
+    /* about me!*/
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* about me END!*/
+    
+    
+    /*footer*/
+    .footer p {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+
+    }
+    /*footer END*/
+
+    
+    /*Javascript animation code!*/
+    .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+    }
+  
+    .fade-in.appear {
+    opacity: 1;
+    }
+
+    .from-bottom {
+    transform: translateY(50%);
+    }
+
+    .from-bottom {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+    }
+
+    .from-bottom.appear {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    /*Javascript animation code END*/
+
+
+}
+    
