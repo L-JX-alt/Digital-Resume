@@ -41,7 +41,7 @@ nav {
 /* landing-page!*/
 
 .my-intro {
-    background-image: url('C:/Users/Liyema/Desktop/Projects/Codespace/Liyema_CV/resources/images/landing_image_256kb.jpg');
+    background-image: url('../images/landing_image_256kb.jpg');
     background-attachment: fixed;
     height: 150vh;
     position: relative;
